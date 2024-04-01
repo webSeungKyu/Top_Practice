@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         Vector2 fromPt = transform.position;
         Vector2 toPt = new Vector2(fromPt.x + axisH, fromPt.y + axisV);
         angleZ = GetAngle(fromPt, toPt);
-        //90도는 위, 0도는 오른쪽, -90도는 아래, 180도는 왼쪽.. 그 사이면 대각선
+        //90도는 위, 0도는 오른쪽, -90도는 아래, 180도는 왼쪽
         if (angleZ >= -45 && angleZ < 45)
         {
             nowAnimation = rightAnime;
