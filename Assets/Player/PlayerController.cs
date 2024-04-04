@@ -21,11 +21,16 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rbody;
     bool isMoving = false;
 
+    public static int hp = 3;
+    public static string gameState;
+    bool damaging = false;
+
     // Start is called before the first frame update
     void Start()
     {
         rbody = GetComponent<Rigidbody2D>();
         oldAnimation = downAnime;
+        gameState = "playing";
     }
 
     // Update is called once per frame
@@ -64,12 +69,34 @@ public class PlayerController : MonoBehaviour
             GetComponent<Animator>().Play(nowAnimation);
         }
 
+        if(gameState != "playing" || damaging)
+        {
+            return;
+        }
     }
 
 
     private void FixedUpdate()
     {
+        if (gameState != "playing" || damaging)
+        {
+            return;
+        }
+        if (damaging)
+        {
+            float val = Mathf.Sin(Time.time * 50);
+            if(val > 0)
+            {
+                gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
+            else
+            {
+                gameObject.GetComponent<SpriteRenderer>().enabled = true;
+            }
+            return;
+        }
         rbody.velocity = new Vector2(axisH, axisV) * speed;
+
     }
 
     public void SetAxis(float h, float v)
@@ -106,4 +133,49 @@ public class PlayerController : MonoBehaviour
 
         return angle;
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            GetDamage(collision.gameObject);
+        }
+    }
+    void GetDamage(GameObject enemy)
+    {
+        if(gameState == "playing")
+        {
+            hp--;
+            if(hp > 0)
+            {
+                //죽기 직전 움직임 멈추기
+                rbody.velocity = new Vector2(0, 0);
+                Vector3 toPos = (transform.position - enemy.transform.position).normalized;
+                rbody.AddForce(new Vector2(toPos.x * 4, toPos.y * 4), ForceMode2D.Impulse);
+                damaging = true;
+                Invoke("DamageEnd", 0.119f);
+            }
+            else
+            {
+                GameOver();
+            }
+        }
+    }
+
+    void DamageEnd()
+    {
+        damaging = false;
+        gameObject.GetComponent<SpriteRenderer>().enabled = true;
+    }
+
+    void GameOver()
+    {
+        gameState = "gameOver";
+        GetComponent<CircleCollider2D>().enabled = false;
+        rbody.velocity = new Vector2(0, 0); // 사망 연출 전 움직임 멈추기
+        rbody.gravityScale = 1;
+        rbody.AddForce(new Vector2(0, 0.5f), ForceMode2D.Impulse);
+        GetComponent<Animator>().Play(deadAnime);
+        Destroy(gameObject, 1.0f);
+    }
+
 }
