@@ -58,7 +58,9 @@ public class ItemData : MonoBehaviour
                 case ItemType.arrow:
                     ItemKeeper.hasArrows++; break;
                 case ItemType.life:
-                    PlayerController.hp++; break;
+                    PlayerController.hp++;
+                    PlayerPrefs.SetInt("playerHp", PlayerController.hp); 
+                    break;
 
                 default: Debug.Log("¿¹¿Ü"); break;
             }

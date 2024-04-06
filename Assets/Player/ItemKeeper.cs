@@ -10,12 +10,19 @@ public class ItemKeeper : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        hasKeys = PlayerPrefs.GetInt("keys");
+        hasArrows = PlayerPrefs.GetInt("arrows");
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public static void SaveItem()
+    {
+        PlayerPrefs.SetInt("keys", hasKeys);
+        PlayerPrefs.SetInt("arrows", hasArrows);
     }
 }

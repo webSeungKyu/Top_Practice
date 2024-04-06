@@ -31,6 +31,7 @@ public class PlayerController : MonoBehaviour
         rbody = GetComponent<Rigidbody2D>();
         oldAnimation = downAnime;
         gameState = "playing";
+        hp = PlayerPrefs.GetInt("playerHp");
     }
 
     // Update is called once per frame
@@ -145,7 +146,8 @@ public class PlayerController : MonoBehaviour
         if(gameState == "playing")
         {
             hp--;
-            if(hp > 0)
+            PlayerPrefs.SetInt("playerHp", hp);
+            if (hp > 0)
             {
                 //죽기 직전 움직임 멈추기
                 rbody.velocity = new Vector2(0, 0);
