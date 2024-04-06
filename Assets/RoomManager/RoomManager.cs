@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class RoomManager : MonoBehaviour
 {
-    public static int doorNumber;
+    public static int doorNumber = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,7 +36,7 @@ public class RoomManager : MonoBehaviour
                 }
 
                 GameObject player = GameObject.FindGameObjectWithTag("Player");
-                player.transform.position = new Vector2(x, y);
+                player.transform.position = new Vector3(x, y);
                 break;
 
             }
