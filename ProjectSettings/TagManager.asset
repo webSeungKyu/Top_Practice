@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Door
   - Item
+  - ItemBox
   layers:
   - Default
   - TransparentFX

@@ -33,12 +33,12 @@ public class ItemData : MonoBehaviour
             if(transform.position.y <= originalTransfrom.position.y)
             {
                 temp *= -1;
-                transform.Translate(0, (temp * 4.2f * Time.deltaTime * 9.7f), 0);
+                transform.Translate(0, (temp * 9.7f * Time.deltaTime), 0);
             }
             else
             {
                 temp *= -1;
-                transform.Translate(0, (temp * 4.2f * Time.deltaTime * 9.7f), 0);
+                transform.Translate(0, (temp * 9.7f * Time.deltaTime), 0);
             }
             yield return new WaitForSeconds(0.42f);
 
