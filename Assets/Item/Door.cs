@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
-    
+    public int arrangeId = 0;
 
     void Start()
     {
