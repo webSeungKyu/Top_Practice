@@ -83,7 +83,7 @@ public class EnemyController : MonoBehaviour
             GetComponent<CircleCollider2D>().enabled = false;
             animator.Play("EnemyDie");
             Destroy(gameObject, 1.19f);
-
+            SaveDataManager.SetArrangeId(arrangeId, gameObject.tag);
         }
     }
 }

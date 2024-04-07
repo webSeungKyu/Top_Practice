@@ -123,6 +123,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &333412976 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7206043676712658493, guid: f304990f684064644bf269c1884eb684, type: 3}
+  m_PrefabInstance: {fileID: 2020524914200323272}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a03f48c8705a0f348b7bc1cf854b7746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &387883691
 GameObject:
   m_ObjectHideFlags: 0
@@ -33460,6 +33471,40 @@ Transform:
   - {fileID: 1047631197}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1620462494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3893718690186758449, guid: f304990f684064644bf269c1884eb684, type: 3}
+  m_PrefabInstance: {fileID: 2020524914200323272}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1620462498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620462494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 333412976}
+          m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+          m_MethodName: ReStart
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1001 &788398080011721754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33512,6 +33557,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7610973859784837174, guid: a37407a271865484b92fc6b3f459157e, type: 3}
+      propertyPath: arrangeId
+      value: 64
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33525,6 +33574,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 323044841045121280, guid: 500f3fd97ed22da4998bb7c4d3df10ab, type: 3}
+      propertyPath: arrangeId
+      value: 43
+      objectReference: {fileID: 0}
     - target: {fileID: 1910109592439869734, guid: 500f3fd97ed22da4998bb7c4d3df10ab, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -33615,18 +33668,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 582211716316729686, guid: f304990f684064644bf269c1884eb684, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 582211716316729686, guid: f304990f684064644bf269c1884eb684, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 582211716316729686, guid: f304990f684064644bf269c1884eb684, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 582211716316729686, guid: f304990f684064644bf269c1884eb684, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -33678,10 +33719,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 7206043676712658493, guid: f304990f684064644bf269c1884eb684, type: 3}
+      propertyPath: reStartSceneName
+      value: WorldMap
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3893718690186758449, guid: f304990f684064644bf269c1884eb684, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1620462498}
   m_SourcePrefab: {fileID: 100100000, guid: f304990f684064644bf269c1884eb684, type: 3}
 --- !u!1001 &2804244290464464362
 PrefabInstance:
@@ -33691,6 +33739,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1273035549810535065, guid: 12840ddb95cc2be4d934bda3ba73bbf3, type: 3}
+      propertyPath: arrangeId
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4262711596851079550, guid: 12840ddb95cc2be4d934bda3ba73bbf3, type: 3}
       propertyPath: m_LocalPosition.x
       value: -15.97
@@ -33748,6 +33800,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3605735539140432334, guid: d55d24756c8e40a479bf47222bbc5d5a, type: 3}
+      propertyPath: arrangeId
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5041294950122376535, guid: d55d24756c8e40a479bf47222bbc5d5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -20.58
@@ -33906,6 +33962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Life
       objectReference: {fileID: 0}
+    - target: {fileID: 7240264400860027904, guid: 52f1222abfdc10743a5335cda836feea, type: 3}
+      propertyPath: arrangeId
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33962,6 +34022,10 @@ PrefabInstance:
     - target: {fileID: 5881737174505680356, guid: e2f593fec9a749b4bb37047648c0d93e, type: 3}
       propertyPath: m_Name
       value: Arrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 9061534132741858768, guid: e2f593fec9a749b4bb37047648c0d93e, type: 3}
+      propertyPath: arrangeId
+      value: 66
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -34026,7 +34090,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558295235413931840, guid: ef9ba80fbd65a244381f3e9b36509a54, type: 3}
       propertyPath: sceneName
-      value: Dungeon1
+      value: WorldMap
       objectReference: {fileID: 0}
     - target: {fileID: 6558295235413931840, guid: ef9ba80fbd65a244381f3e9b36509a54, type: 3}
       propertyPath: doorNumber

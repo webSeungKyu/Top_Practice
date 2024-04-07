@@ -181,7 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558295235413931840, guid: ef9ba80fbd65a244381f3e9b36509a54, type: 3}
       propertyPath: sceneName
-      value: WorldMap
+      value: Dungeon1
       objectReference: {fileID: 0}
     - target: {fileID: 6558295235413931840, guid: ef9ba80fbd65a244381f3e9b36509a54, type: 3}
       propertyPath: doorNumber
@@ -250,11 +250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558295235413931840, guid: ef9ba80fbd65a244381f3e9b36509a54, type: 3}
       propertyPath: sceneName
-      value: WorldMap
+      value: Dungeon1
       objectReference: {fileID: 0}
     - target: {fileID: 6558295235413931840, guid: ef9ba80fbd65a244381f3e9b36509a54, type: 3}
       propertyPath: doorNumber
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4483,7 +4483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6558295235413931840, guid: ef9ba80fbd65a244381f3e9b36509a54, type: 3}
       propertyPath: sceneName
-      value: WorldMap
+      value: Dungeon1
       objectReference: {fileID: 0}
     - target: {fileID: 6558295235413931840, guid: ef9ba80fbd65a244381f3e9b36509a54, type: 3}
       propertyPath: doorNumber
@@ -4705,6 +4705,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 582211716316729686, guid: f304990f684064644bf269c1884eb684, type: 3}
       propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 582211716316729686, guid: f304990f684064644bf269c1884eb684, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 582211716316729686, guid: f304990f684064644bf269c1884eb684, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 582211716316729686, guid: f304990f684064644bf269c1884eb684, type: 3}
+      propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 582211716316729686, guid: f304990f684064644bf269c1884eb684, type: 3}

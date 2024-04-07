@@ -64,6 +64,7 @@ public class ItemData : MonoBehaviour
 
                 default: Debug.Log("¿¹¿Ü"); break;
             }
+            SaveDataManager.SetArrangeId(arrangeId, gameObject.tag);
         }
 
         gameObject.GetComponent<CircleCollider2D>().enabled = false;

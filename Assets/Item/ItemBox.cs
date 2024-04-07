@@ -27,6 +27,7 @@ public class ItemBox : MonoBehaviour
             int i = Random.Range(0, Items.Length);
             Instantiate(Items[i], transform.position, Quaternion.identity);
             Destroy(gameObject, 4.2f);
+            SaveDataManager.SetArrangeId(arrangeId, gameObject.tag);
         }
     }
 }

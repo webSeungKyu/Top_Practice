@@ -20,6 +20,7 @@ public class Door : MonoBehaviour
             {
                 ItemKeeper.hasKeys--;
                 Destroy(gameObject);
+                SaveDataManager.SetArrangeId(arrangeId, gameObject.tag);
             }
         }
     }
