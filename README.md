@@ -2,14 +2,13 @@
 
 <br/><br/><br/><br/>
 
-PlayerPrefs 활용하여 데이터 저장하는 간단 구현
+PlayerPrefs 활용하여 데이터 저장하는 간단 구현<br/><br/>
 https://github.com/webSeungKyu/Top_Practice/assets/112837427/70ef0494-460a-41b0-9911-b3fb6d5b5bf2
 
 <br/><br/>
 
-
 https://github.com/webSeungKyu/Top_Practice/assets/112837427/7c198569-8092-4d65-87a2-9bf6ab7d7b3e
-
+<br/>
 
 
 
