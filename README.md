@@ -1,8 +1,8 @@
 탑뷰 게임 만들기    
 
-<br/><br/><br/><br/>
+<br/>
 
-PlayerPrefs 활용하여 데이터 저장하는 간단 구현<br/>
+PlayerPrefs 활용하여 데이터 저장 간단 구현<br/>
 
 
 
@@ -21,9 +21,6 @@ https://github.com/webSeungKyu/Top_Practice/assets/112837427/0606ab26-7226-4efc-
 
 
 <br/>
-
-
-
 
 
 ※ 나에게 유용했던 내용들     
