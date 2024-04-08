@@ -2,11 +2,31 @@
 
 <br/><br/><br/><br/>
 
+PlayerPrefs 활용하여 데이터 저장하는 간단 구현
+https://github.com/webSeungKyu/Top_Practice/assets/112837427/70ef0494-460a-41b0-9911-b3fb6d5b5bf2
+
+<br/><br/>
+
+
+https://github.com/webSeungKyu/Top_Practice/assets/112837427/7c198569-8092-4d65-87a2-9bf6ab7d7b3e
+
+
 
 
 
 ※ 나에게 유용했던 내용들     
+<함수>
+[ OnTrigger ] / [OnCollision ]
+ - 두 물체에 Collider컴포넌트가 있어야 한다.
 
+[ Trigger 체크 ]
+ - OnCollision함수는 IsTrigger 체크가 없어야 하고
+ - OnTrigger함수는 한 개 이상의 Collider컴포넌트의 IsTrigger가 활성화가 필요.
+
+[사용 예시]
+ - 물리적 충돌이 필요한 경우엔 OnCollision 사용
+ - 뚫고 지나가는 것처럼 물리적 충돌이 필요 없을 시 OnTrigger 사용
+ 
 
 
 <캐릭터 사망 연출 시>
